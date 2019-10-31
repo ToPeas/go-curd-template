@@ -4,17 +4,16 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/jinzhu/copier"
 	"github/ToPeas/go-curd-template/mysql"
-	"github/ToPeas/go-curd-templatemy/sql"
-	"github/ToPeas/go-curd-templatepkg/app"
-	"github/ToPeas/go-curd-templatepkg/e"
-	"github/ToPeas/go-curd-templatepkg/myerr"
-	"github/ToPeas/go-curd-templatepkg/validator"
+	"github/ToPeas/go-curd-template/pkg/app"
+	"github/ToPeas/go-curd-template/pkg/e"
+	"github/ToPeas/go-curd-template/pkg/myerr"
+	"github/ToPeas/go-curd-template/pkg/validator"
 	"net/http"
 	"strconv"
 )
 
 type linkPayload struct {
-	Name string  `form:"name" json:"name"  validate:"gt=6,lt=30,required" comment:"链接名称"`
+	Name string `form:"name" json:"name"  validate:"gt=6,lt=30,required" comment:"链接名称"`
 	Url  string `form:"url" json:"url" validate:"gt=0,required" comment:"链接地址"`
 }
 
@@ -149,4 +148,3 @@ func DeleteLink(c *gin.Context) {
 	appG.Success(nil)
 	return
 }
-

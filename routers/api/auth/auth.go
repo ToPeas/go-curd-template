@@ -3,10 +3,10 @@ package auth
 import (
 	"fmt"
 	"github.com/gin-gonic/gin"
-	"github/ToPeas/go-curd-templatemysql"
-	"github/ToPeas/go-curd-templatepkg/app"
-	"github/ToPeas/go-curd-templatepkg/e"
-	"github/ToPeas/go-curd-templatepkg/util"
+	"github/ToPeas/go-curd-template/mysql"
+	"github/ToPeas/go-curd-template/pkg/app"
+	"github/ToPeas/go-curd-template/pkg/e"
+	"github/ToPeas/go-curd-template/pkg/util"
 	"net/http"
 )
 

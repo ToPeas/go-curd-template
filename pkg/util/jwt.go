@@ -2,7 +2,7 @@ package util
 
 import (
 	"github.com/dgrijalva/jwt-go"
-	"github/ToPeas/go-curd-templatepkg/setting"
+	"github/ToPeas/go-curd-template/pkg/setting"
 )
 
 var jwtSecret = []byte(setting.Config.App.JwtSecret)

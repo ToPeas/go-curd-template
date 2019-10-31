@@ -3,9 +3,9 @@ package routers
 import (
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
-	"github/ToPeas/go-curd-templatepkg/setting"
-	"github/ToPeas/go-curd-templaterouters/api/auth"
-	"github/ToPeas/go-curd-templaterouters/api/web"
+	"github/ToPeas/go-curd-template/pkg/setting"
+	"github/ToPeas/go-curd-template/routers/api/auth"
+	"github/ToPeas/go-curd-template/routers/api/web"
 )
 
 func InitRouter() *gin.Engine {
@@ -49,6 +49,7 @@ func InitRouter() *gin.Engine {
 
 	webLoginRequired := r.Group("/admin/api")
 
+	// todo 本地调试的时候 可以把接口的jwt校验 去掉
 	//webLoginRequired.Use(jwt.JWT())
 
 	{

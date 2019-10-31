@@ -4,7 +4,7 @@ import (
 	"fmt"
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/go-xorm/xorm"
-	"github/ToPeas/go-curd-templatepkg/setting"
+	"github/ToPeas/go-curd-template/pkg/setting"
 	"os"
 	"time"
 	"xorm.io/core"
