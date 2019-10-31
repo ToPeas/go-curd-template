@@ -1,0 +1,13 @@
+app:
+  timezone: Asia/Shanghai
+  jwt_secret: 23333
+  port: 8000
+  debug: true
+database:
+  host:
+  port:
+  username:
+  password:
+  dbname:
+  charset: utf8mb4
+  collation: utf8mb4_unicode_ci
