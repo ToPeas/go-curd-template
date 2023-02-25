@@ -17,7 +17,7 @@ require (
 	github.com/leodido/go-urn v1.2.0 // indirect
 	github.com/spf13/viper v1.4.0
 	go.uber.org/automaxprocs v1.2.0
-	golang.org/x/crypto v0.0.0-20190829043050-9756ffdc2472
+	golang.org/x/crypto v0.1.0
 	gopkg.in/go-playground/validator.v9 v9.30.0
 	xorm.io/core v0.7.0
 )
